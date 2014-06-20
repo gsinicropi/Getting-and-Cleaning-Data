@@ -2,7 +2,9 @@
 Human Activity Recognition Using Smartphones Dataset
 ==================================================================
 The dataset includes the following files:
-a .R file (R script) named on run_Analysis.R a .MD file  named on CodeBook.md and this Readme file 
+run_Analysis.R  
+CodeBook.md 
+and this Readme file 
 
 The R script (run_Analysis.R) encompasses all the codes to obtain the tidy Dataset
 
@@ -45,5 +47,4 @@ Creates a second, independent tidy data set with the average of each variable fo
 * Aggregate data by subjectId and activityDsc with Mean values
 
 Write the Tidy dataset File
-
 
