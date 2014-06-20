@@ -1,18 +1,25 @@
 ==================================================================
-Human Activity Recognition Using Smartphones Dataset
+
+## Human Activity Recognition Using Smartphones Dataset
+
 ==================================================================
-The dataset includes the following files:
-run_Analysis.R  
+
+### The dataset includes the following files:
+
+RUN_Analysis.R  
 CodeBook.md 
 and this Readme file 
 
 The R script (run_Analysis.R) encompasses all the codes to obtain the tidy Dataset
 
-the CodeBook.md explain how to interpret each variable.
-==================================================================
-Data
+The CodeBook.md explain how to interpret each variable.
 
-Data set and transformations 
+==================================================================
+
+## Data
+
+### Data set and transformations 
+
 This data set was obtained from different txt files (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 
 To obtain a tidy data set, all the downloaded files were loaded and merged togheter to have a full data set with 563 columns and 10229 rows. 
