@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=9" >
 
-<title>Getting and Cleaning Data</title>
+<title></title>
 
 <style type="text/css">
 body, td {
@@ -142,14 +142,29 @@ hr {
 </head>
 
 <body>
-<h2>Getting and Cleaning Data</h2>
+<h1></h1>
 
-<h3>Peer Assessments</h3>
+<h2>Human Activity Recognition Using Smartphones Dataset</h2>
 
-<h1>CodeBook</h1>
+<h1></h1>
 
-<p>##Data set and transformations 
-This data set was obtained from different txt files (<a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip</a>).</p>
+<h3>The repository includes the following files:</h3>
+
+<p>RUN_Analysis.R<br/>
+CodeBook.md 
+and this Readme file </p>
+
+<p>The R script (run_Analysis.R) encompasses all the codes to obtain the tidy Dataset</p>
+
+<p>The CodeBook.md explain how to interpret each variable.</p>
+
+<h1></h1>
+
+<h2>Data</h2>
+
+<h3>Data set and transformations</h3>
+
+<p>This data set was obtained from different txt files (<a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip</a>).</p>
 
 <p>To obtain a tidy data set, all the downloaded files were loaded and merged togheter to have a full data set with 563 columns and 10229 rows. 
 The descriptive names of each activity (instead of numbers) were used to describe the 
@@ -160,9 +175,9 @@ Finally an independent tidy data set with the average of each variable for each
 activity and each subject was created. The dimension of the final data set was 88 columns and 
 180 rows. </p>
 
-<h2>Steps to obtain the tidyDataset:</h2>
+<p>Steps to obtain the tidyDataset:</p>
 
-<h3>Loading</h3>
+<p>Loading</p>
 
 <ul>
 <li>Download data</li>
@@ -175,7 +190,7 @@ activity and each subject was created. The dimension of the final data set was 8
 <li>Use features cleaned data to rename xTrain and xTest data columns</li>
 </ul>
 
-<h3>(1) Merges the training and the test sets to create one data set with (2.) only the measurements on the mean and standard deviation for each measurement</h3>
+<p>(1) Merges the training and the test sets to create one data set with (2.) only the measurements on the mean and standard deviation for each measurement</p>
 
 <ul>
 <li>Filter Features to have only Means and Standard deviations</li>
@@ -185,217 +200,13 @@ activity and each subject was created. The dimension of the final data set was 8
 <li>Appropriately labels the data set with descriptive activity names. </li>
 </ul>
 
-<h3>Creates a second, independent tidy data set with the average of each variable for each activity and each subject.</h3>
+<p>Creates a second, independent tidy data set with the average of each variable for each activity and each subject. </p>
 
 <ul>
 <li>Aggregate data by subjectId and activityDsc with Mean values</li>
 </ul>
 
-<h3>Write the Tidy dataset File</h3>
-
-<h2>Interpretation of variables</h2>
-
-<h3>In the name of variables are always present some of the following character or words:</h3>
-
-<ul>
-<li>X, Y, Z are the axis of X, Y and Z (X, Y and Z are the directions) </li>
-<li>name that begin with t: time domain signals </li>
-<li>name that begin with f: frequency domain signals </li>
-<li>name with &ldquo;mean&rdquo;: Mean value </li>
-<li>name with &ldquo;std&rdquo;: Standard deviation </li>
-<li>name with &ldquo;Freq&rdquo;: Weighted average of the frequency components to obtain a mean frequency </li>
-<li>name with &ldquo;angle&rdquo;: Angle between to vectors </li>
-<li>name with &ldquo;Acc&rdquo;: Acceleration signal from the smartphone accelerometer (sensor signal). </li>
-<li>name with &ldquo;Gyr&rdquo;: Angular velocity from the smartphone gyroscope (sensor signal). </li>
-<li>name with &ldquo;Body&rdquo;: The signals related to the body of subject (individual) who has been examined. </li>
-<li>name with &ldquo;Jerk&rdquo;: Jerk signals (the body linear acceleration and angular velocity were derived in time to reach this signal) </li>
-<li>name with &ldquo;Mag&rdquo;: magnitude of the three-dimensional signals calculated using the Euclidean norm </li>
-<li>name with &ldquo;Gravity&rdquo;: The signals related to the gravity. </li>
-<li>subjectId: The numbers between 1 to 30 which are identifiers of the subjects 
-(individuals) who carried out the experiment. </li>
-<li>activitydsc: including 6 activities performed by subjects (STANDING, SITTING, 
-LAYING, WALKING, WALKING-DOWNSTAIRS, WALKING-UPSTAIRS) </li>
-</ul>
-
-<h3>The following are all the fields of tidyDatSet:</h3>
-
-<p>subjectId - The numbers between 1 to 30 which are identifiers of the subjects 
-(individuals) who carried out the experiment</p>
-
-<p>activityDsc - including 6 activities performed by subjects (STANDING, SITTING, 
-LAYING, WALKING, WALKING-DOWNSTAIRS, WALKING-UPSTAIRS)</p>
-
-<p>tBodyAccmeanX - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccmeanY - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccmeanZ - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccstdX - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccstdY - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccstdZ - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tGravityAccmeanX</p>
-
-<p>tGravityAccmeanY</p>
-
-<p>tGravityAccmeanZ</p>
-
-<p>tGravityAccstdX</p>
-
-<p>tGravityAccstdY</p>
-
-<p>tGravityAccstdZ</p>
-
-<p>tBodyAccJerkmeanX - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccJerkmeanY - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccJerkmeanZ - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccJerkstdX - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccJerkstdY - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccJerkstdZ - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyGyromeanX - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyromeanY - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyromeanZ - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyrostdX - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyrostdY - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyrostdZ - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyroJerkmeanX - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyroJerkmeanY - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyroJerkmeanZ - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyroJerkstdX - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyroJerkstdY - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyroJerkstdZ - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyAccMagmean - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccMagstd - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tGravityAccMagmean - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tGravityAccMagstd - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccJerkMagmean - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyAccJerkMagstd - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>tBodyGyroMagmean - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyroMagstd - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyroJerkMagmean - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>tBodyGyroJerkMagstd - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyAccmeanX - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccmeanY - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccmeanZ - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccstdX - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccstdY - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccstdZ - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccmeanFreqX - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccmeanFreqY - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccmeanFreqZ - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccJerkmeanX - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccJerkmeanY - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccJerkmeanZ - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccJerkstdX - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccJerkstdY - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccJerkstdZ - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccJerkmeanFreqX - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccJerkmeanFreqY - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccJerkmeanFreqZ - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyGyromeanX - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyGyromeanY - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyGyromeanZ - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyGyrostdX - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyGyrostdY - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyGyrostdZ - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyGyromeanFreqX - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyGyromeanFreqY - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyGyromeanFreqZ - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyAccMagmean - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccMagstd - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyAccMagmeanFreq - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyBodyAccJerkMagmean - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyBodyAccJerkMagstd - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyBodyAccJerkMagmeanFreq - The body acceleration signal obtained by subtracting the gravity from the total acceleration</p>
-
-<p>fBodyBodyGyroMagmean - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyBodyGyroMagstd - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyBodyGyroMagmeanFreq - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyBodyGyroJerkMagmean - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyBodyGyroJerkMagstd - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>fBodyBodyGyroJerkMagmeanFreq - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>angletBodyAccMeangravity</p>
-
-<p>angletBodyAccJerkMeangravityMean</p>
-
-<p>angletBodyGyroMeangravityMean - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>angletBodyGyroJerkMeangravityMean - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>angleXgravityMean - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>angleYgravityMean - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
-
-<p>angleZgravityMean - The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second</p>
+<p>Write the Tidy dataset File</p>
 
 </body>
 
