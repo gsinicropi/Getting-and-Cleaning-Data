@@ -4,13 +4,13 @@
 
 ==================================================================
 
-### The dataset includes the following files:
+### The repository includes the following files:
 
-RUN_Analysis.R  
-CodeBook.md 
-and this Readme file 
+* RUN_Analysis.R  
+* CodeBook.md 
+* Readme.md 
 
-The R script (run_Analysis.R) encompasses all the codes to obtain the tidy Dataset
+The R script (RUN_Analysis.R) encompasses all the codes to obtain the tidy Dataset
 
 The CodeBook.md explain how to interpret each variable.
 
